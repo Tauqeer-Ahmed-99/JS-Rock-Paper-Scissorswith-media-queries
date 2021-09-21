@@ -16,11 +16,11 @@ const userInput = () => {
   3 . for ${SELECTION_SCISSORS}`,
     ""
   ).toUpperCase();
-  if (userIp == 1) {
+  if (userIp === "1") {
     userIp = SELECTION_ROCK;
-  } else if (userIp == 2) {
+  } else if (userIp === "2") {
     userIp = SELECTION_PAPER;
-  } else if (userIp == 3) {
+  } else if (userIp === "3") {
     userIp = SELECTION_SCISSORS;
   }
 
