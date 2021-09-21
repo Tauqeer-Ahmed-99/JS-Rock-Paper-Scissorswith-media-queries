@@ -8,7 +8,22 @@ let userIp;
 let compSelection;
 
 const userInput = () => {
-  userIp = prompt("Rock, Paper or Scissors?", "").toUpperCase();
+  userIp = prompt(
+    `Rock, Paper or Scissors? 
+  You can Also choose:
+  1 . for ${SELECTION_ROCK}
+  2 . for ${SELECTION_PAPER}
+  3 . for ${SELECTION_SCISSORS}`,
+    ""
+  ).toUpperCase();
+  if (userIp == 1) {
+    userIp = SELECTION_ROCK;
+  } else if (userIp == 2) {
+    userIp = SELECTION_PAPER;
+  } else if (userIp == 3) {
+    userIp = SELECTION_SCISSORS;
+  }
+
   if (
     userIp !== SELECTION_ROCK &&
     userIp !== SELECTION_PAPER &&
